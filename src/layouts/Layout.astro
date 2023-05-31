@@ -1,0 +1,42 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Conmentibus es una comunidad global de jóvenes apasionados por el aprendizaje y la programación que tienen un compromiso común de hacer una diferencia significativa en nuestro mundo. Creemos firmemente que cada uno de nosotros tiene algo valioso que ofrecer y que juntos podemos lograr un impacto positivo en la sociedad.">
+		<meta name="keywords" content="conmentibus, comunidad de programadores, progamacion, aprender a programar">
+		<meta name="author" content="Deiby Alexander Peña Toro, deiby.penaa@gmail.com, https://github.com/piparcode">
+		<meta name="robots" content="all">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.conmentibus.com/" />
+		<meta property="og:title" content="Conmentibus" />
+		<meta property="og:description" content="Conmentibus es una comunidad global de jóvenes apasionados por el aprendizaje y la programación que tienen un compromiso común de hacer una diferencia significativa en nuestro mundo. Creemos firmemente que cada uno de nosotros tiene algo valioso que ofrecer y que juntos podemos lograr un impacto positivo en la sociedad." />
+		<meta property="og:image" content="/open_graph.webp" />
+	
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://www.conmentibus.com/" />
+		<meta property="twitter:title" content="Conmentibus" />
+		<meta property="twitter:description" content="Conmentibus es una comunidad global de jóvenes apasionados por el aprendizaje y la programación que tienen un compromiso común de hacer una diferencia significativa en nuestro mundo. Creemos firmemente que cada uno de nosotros tiene algo valioso que ofrecer y que juntos podemos lograr un impacto positivo en la sociedad." />
+		<meta property="twitter:image" content="/open_graph.webp" />
+		<title>{title}</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+	</head>
+	<body class="overflow-x-hidden">
+		<slot />
+	</body>
+</html>

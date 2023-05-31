@@ -1,0 +1,22 @@
+<div id="modalContacto" class="hidden fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-sm text-gray-800 overflow-hidden rounded-2xl px-2">
+    <form action="https://formspree.io/f/xknaeedn" method="POST">
+        <div class="bg-slate-900 text-white shadow-md rounded-lg text-left">
+            <div class="h-2 bg-[#9C7DFF] rounded-t-md"></div>
+            <div class="px-6 py-4">
+                <h2 class="text-center text-2xl font-bold my-4">¿En qué te podemos ayudar?</h2>
+                <label class="block font-semibold">Tu Correo</label>
+                <input type="email" name="email" placeholder="Correo" class="border w-full h-5 text-zinc-900 px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-slate-900 focus:ring-1 rounded-md" required>
+                <label class="block mt-3 font-semibold"> Tu Mensaje </label>
+                <textarea name="message" placeholder="Mensaje..." class="border w-full h-40 text-zinc-900 resize-none px-3 py-5 mt-2 hover:outline-none focus:outline-none focus:ring-slate-900 focus:ring-1 rounded-md" cols="30" rows="10" required ></textarea>
+                <div class="flex justify-evenly">
+                    <button type="submit" class="flex flex-col items-center">
+                        <h3 class="mt-4 text-white text-lg font-semibold border border-zinc-400 rounded-full px-6 py-2 shadow-lg transition-all duration-300 hover:bg-[#845DE9] hover:border-[#845DE9] hover:shadow-[#855de97e] hover:scale-110">Enviar</h3>
+                    </button>
+                    <button id="btnCloseForm" type="submit" class="flex flex-col items-center">
+                        <h3 class="mt-4 text-white text-lg font-semibold border border-zinc-400 rounded-full px-6 py-2 shadow-lg transition-all duration-300 hover:bg-[#845DE9] hover:border-[#845DE9] hover:shadow-[#855de97e] hover:scale-110">Cerrar</h3>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

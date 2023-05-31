@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar_movile from '../components/Navbar_movile.astro';
+import Navbar from '../components/Navbar.astro';
+import Social from '../components/Social.astro';
+import About from '../components/About.astro';
+import Footer from '../components/Footer.astro';
+import FormContacto from '../components/Form_contacto.astro';
+---
+
+<Layout title="Conmentibus">
+	<main class="overflow-hidden">
+		<header class="bg-fondoHomeMovile lg:bg-fondoHome bg-no-repeat bg-center bg-cover h-screen text-white">
+			<Navbar /> 	
+			<Navbar_movile />
+		</header>
+		<Social />
+		<About />
+		<Footer />
+		<FormContacto />
+	</main>
+</Layout>
+
+<script lang="js">
+    const modalContacto = document.querySelector('#modalContacto')
+	document.getElementById('btnMovileOpenForm').addEventListener('click', () => modalContacto.classList.remove('hidden'))
+	document.getElementById('btnOpenForm').addEventListener('click', () => modalContacto.classList.remove('hidden'))
+    document.getElementById('btnCloseForm').addEventListener('click', () => modalContacto.classList.add('hidden'))
+</script>
+

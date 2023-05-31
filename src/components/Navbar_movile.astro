@@ -1,0 +1,39 @@
+---
+import { Icon } from 'astro-icon'
+--- 
+
+<nav class="fixed z-20 inset-x-2 bottom-3 rounded-xl shadow-xl backdrop-blur-md bg-slate-900 sm:hidden">
+    <ul class="flex justify-around items-center py-3">
+        <li>
+            <a href="#" class="flex flex-col items-center text-white font-semibold hover:scale-110">
+                <Icon name="ic:round-home" class="img w-6 h-6" />
+                <h3>Inicio</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#social" class="flex flex-col items-center text-white font-semibold hover:scale-110">
+                <Icon name="mdi:user-group"  class="w-6 h-6"  />
+                <h3>Social</h3>
+            </a>
+        </li>
+        <li>
+            <a href="#about" class="flex flex-col items-center text-white font-semibold hover:scale-110">
+                <Icon name="mdi:account-question"  class="w-6 h-6"  />
+                <h3>Acerca</h3>
+            </a>
+        </li>
+        <li>
+            <button type="button" id="btnMovileOpenForm" class="flex flex-col items-center text-white font-semibold hover:scale-110">
+                <Icon name="ant-design:message-filled"  class="w-6 h-6"  />
+                <h3>Contacto</h3>
+            </button>
+        </li>
+    </ul>
+</nav>
+
+<style>
+    a:hover {
+        text-shadow: 0 0 10px #845DE9;
+
+    }
+</style>

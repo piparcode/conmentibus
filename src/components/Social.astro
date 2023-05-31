@@ -1,0 +1,19 @@
+---
+import Card from './Card.astro';
+import astroSocial from '/astro-social.svg'
+---
+
+<section id="social" class="h-screen bg-white py-6 px-4">
+    <div class="bg-white grid place-items-center gap-4">
+        <div class="w-full max-w-3xl">
+            <img class="w-full mb-10" src={astroSocial} alt="">
+            <ul class="grid grid-cols-cards gap-4">
+                <Card href="https://www.youtube.com/@conmentibus" img="mdi:youtube" title="Youtube" />
+                <Card href="https://www.twitch.tv/conmentibus" img="mdi:twitch" title="Twitch" />
+                <Card href="https://www.instagram.com/conmentibus/" img="mdi:instagram" title="Instagram" />
+                <Card href="https://twitter.com/conmentibus" img="mdi:twitter" title="Twitter" />
+                <Card href="https://www.tiktok.com/@conmentibus" img="ic:baseline-tiktok" title="Tiktok" />
+            </ul>
+        </div>
+    </div>
+</section>
